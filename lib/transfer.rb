@@ -25,7 +25,7 @@ class Transfer
     puts "Transaction rejected. Please check your account balance."
   elsif valid? == false
     @status = "rejected"
-    puts "Transaction rejected. Please check your account balance."  
+    puts "Transaction rejected. Please check your account balance."
   end
 end
 
