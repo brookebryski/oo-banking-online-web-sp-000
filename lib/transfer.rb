@@ -23,8 +23,9 @@ class Transfer
      @sender.balance < @amount || @sender.status != "open"
     @status = "rejected"
     puts "Transaction rejected. Please check your account balance."
-  else
-    puts "Transaction rejected. Please check your account balance."
+  elsif valid? == false
+    @status = "rejected"
+    puts "Transaction rejected. Please check your account balance."  
   end
 end
 
